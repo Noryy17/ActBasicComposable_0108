@@ -32,6 +32,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Login", color = Color.Blue, fontSize = 28.sp, fontWeight = FontWeight.Bold)
+        Text(text = "Ini adalah halaman login,", color = Color.White, fontSize = 14.sp)
     }
 
 }
