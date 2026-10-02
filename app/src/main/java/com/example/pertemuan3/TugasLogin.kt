@@ -3,9 +3,12 @@ package com.example.pertemuan3
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -20,19 +23,33 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
-    Box(modifier = modifier.fillMaxWidth()){
+    Box(modifier = modifier.fillMaxSize()) {
+
         Image(
             painter = painterResource(id = R.drawable.bg_login),
             contentDescription = null,
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
-    }
-    Column(modifier = modifier.fillMaxSize().statusBarsPadding().padding(top = 16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(text = "Login", color = Color.Blue, fontSize = 28.sp, fontWeight = FontWeight.Bold)
-        Text(text = "Ini adalah halaman login,", color = Color.White, fontSize = 14.sp)
-    }
 
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .statusBarsPadding()
+                .padding(top = 16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(text = "Login", color = Color.Blue, fontSize = 28.sp, fontWeight = FontWeight.Bold)
+            Text(text = "Ini adalah halaman login,", color = Color.White, fontSize = 14.sp)
+
+            Spacer(modifier = Modifier.height(32.dp))
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = "Logo kampus",
+                modifier = Modifier.size(120.dp)
+            )
+            Spacer(modifier = Modifier.height(40.dp))
+
+        }
+    }
 }
