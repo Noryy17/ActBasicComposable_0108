@@ -50,6 +50,9 @@ fun TugasLogin(modifier: Modifier = Modifier) {
             )
             Spacer(modifier = Modifier.height(40.dp))
             Text(text = "Nama", color = Color.Red, fontSize = 14.sp, fontWeight = FontWeight.Bold)
+            Text(text = "Faid Arya Pamungkas", color = Color.Blue, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+            Text(text = "20240140108", color = Color.Black, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+            Spacer(modifier = Modifier.height(16.dp))
 
         }
     }
