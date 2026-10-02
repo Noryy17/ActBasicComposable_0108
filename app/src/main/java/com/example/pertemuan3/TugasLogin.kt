@@ -44,23 +44,23 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 .padding(top = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = "Login", color = Color.Blue, fontSize = 28.sp, fontWeight = FontWeight.Bold)
-            Text(text = "Ini adalah halaman login,", color = Color.White, fontSize = 14.sp)
+            Text(text = "Login", color = Color(0xFF447f98), fontSize = 28.sp, fontWeight = FontWeight.Bold)
+            Text(text = "Ini adalah halaman login,", color = Color(0xFFECE7E2), fontSize = 14.sp)
 
             Spacer(modifier = Modifier.height(32.dp))
             Image(
-                painter = painterResource(id = R.drawable.logo_umy),
+                painter = painterResource(id = R.drawable.logoo_umyy),
                 contentDescription = "Logo kampus",
-                modifier = Modifier.size(120.dp)
+                modifier = Modifier.size(190.dp)
             )
             Spacer(modifier = Modifier.height(40.dp))
-            Text(text = "Nama", color = Color.Red, fontSize = 14.sp, fontWeight = FontWeight.Bold)
-            Text(text = "Faid Arya Pamungkas", color = Color.Blue, fontSize = 16.sp, fontWeight = FontWeight.Bold)
-            Text(text = "20240140108", color = Color.Black, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+            Text(text = "Nama", color = Color(0xFF447f98), fontSize = 14.sp, fontWeight = FontWeight.Bold)
+            Text(text = "Faid Arya Pamungkas", color = Color(0xFF447f98), fontSize = 16.sp, fontWeight = FontWeight.Bold)
+            Text(text = "20240140108", color = Color(0xFF629bb5), fontSize = 22.sp, fontWeight = FontWeight.Bold)
             Spacer(modifier = Modifier.height(16.dp))
             Box(
                 modifier = Modifier
-                    .size(270.dp)
+                    .size(140.dp)
                     .clip(CircleShape)
                     .background(Color(0xFFE8E8F4))
                     .border(width = 3.dp, color = Color.White, shape = CircleShape),
@@ -70,7 +70,7 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 Image(
                     painter = painterResource(id = R.drawable.foto_profil),
                     contentDescription = "Foto profil",
-                    modifier = Modifier.fillMaxHeight(),
+                    modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.Fit
                 )
             }
