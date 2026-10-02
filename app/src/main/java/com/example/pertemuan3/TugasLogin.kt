@@ -6,6 +6,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -64,7 +65,14 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                     .background(Color(0xFFE8E8F4))
                     .border(width = 3.dp, color = Color.White, shape = CircleShape),
                 contentAlignment = Alignment.Center
+
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.foto_profil),
+                    contentDescription = "Foto profil",
+                    modifier = Modifier.fillMaxHeight(),
+                    contentScale = ContentScale.Fit
+                )
             }
 
         }
